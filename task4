@@ -1,0 +1,12 @@
+class UberPrice {
+  constructor(distance) {
+    this.distance = distance;
+    this.baseFare = 5; // Assuming base fare is fixed at 5 for beginners
+  }
+
+  calculatePrice() {
+    const distanceFare = this.distance * 0.5; // 0.5 per kilometer
+    const totalPrice = this.baseFare + distanceFare;
+    console.log(`Your Uber price is: $${totalPrice.toFixed(2)}`); // Display price with 2 decimals
+  }
+}
